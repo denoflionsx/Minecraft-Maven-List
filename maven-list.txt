@@ -18,4 +18,14 @@ repositories {
 		name = "ic2"
 		url = "http://maven.ic2.player.to/"
 	}
+	
+	 maven {
+		name = "TehNut"
+		url = "http://tehnut.info/maven/"
+	}
+	
+	 maven {
+		name = "tterrag"
+		url = "http://maven.tterrag.com/"
+	}
 }
