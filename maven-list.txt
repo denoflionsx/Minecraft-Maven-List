@@ -1,0 +1,21 @@
+repositories {
+     maven { // the repo from which to get NEI and stuff
+         name 'CB Repo'
+         url "http://chickenbones.net/maven/"
+     }
+	 
+	 maven { // The repo from which to get waila
+         name "Mobius Repo"
+         url "http://mobiusstrip.eu/maven"
+     }
+	 
+	 maven {
+            name = "inpure"
+            url = "http://files.inpureprojects.info/maven"
+     }
+	 
+	 maven {
+		name = "ic2"
+		url = "http://maven.ic2.player.to/"
+	}
+}
