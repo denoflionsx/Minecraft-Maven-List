@@ -1,0 +1,57 @@
+// To add more, just follow the same format of [module], [revision], and [ext].
+// These can be any direct download links.
+// Make sure any links you add include a *deobfuscated* version of the mod.
+
+repositories {
+	ivy {
+		name "CoFHLib"
+		artifactPattern "http://addons.cursecdn.com/files/2212/893/[module]-[revision].[ext]"
+	}
+	
+	ivy {
+		name "CoFHCore"
+        artifactPattern "http://addons.cursecdn.com/files/2212/895/[module]-[revision].[ext]"
+    }
+	
+	ivy {
+		name "RedstoneArsenal"
+        artifactPattern "http://addons.cursecdn.com/files/2212/448/[module]-[revision].[ext]"
+    }
+	
+	ivy {
+		name "ThermalExpansion"
+        artifactPattern "http://addons.curse.cursecdn.com/files/2212/446/[module]-[revision].[ext]"
+    }
+	
+	ivy {
+		name "ThermalFoundation"
+        artifactPattern "http://addons.curse.cursecdn.com/files/2212/444/[module]-[revision].[ext]"
+    }
+	
+	ivy {
+		name "MineTweaker3"
+        artifactPattern "http://minetweaker3.powerofbytes.com/download/[module]-[revision].[ext]"
+    }
+}
+
+// To compile, use the format below.
+
+// [module]   = name
+// [revision] = version
+// [ext]      = ext
+
+// For version, you can either provide a version directly similar to the others. (Like CoFHLib)
+// Or you can reference settings in gradle.properites. (Like the rest)
+
+dependencies {
+	compile name: 'CoFHLib', version: '[1.7.10]1.0.0B7-dev-29', ext: 'jar'
+	compile name: 'CoFHCore', version: "${cofhcore_version}", ext: 'jar'
+	compile name: 'RedstoneArsenal', version: "${rars_version}", ext: 'jar'
+	compile name: 'ThermalExpansion', version: "${texpansion_version}", ext: 'jar'
+	compile name: 'ThermalFoundation', version: "${tfoundation_version}", ext: 'jar'
+	compile name: 'MineTweaker3', version: "${minetweaker_version}", ext: 'jar'
+}
+
+// Using gradle.properties is quite simple. Just create the files and add lines similar to this:
+
+tfoundation_version=[1.7.10]1.1.0RC1-dev-19
