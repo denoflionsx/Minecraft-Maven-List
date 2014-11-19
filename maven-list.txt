@@ -4,17 +4,17 @@ repositories {
          url "http://chickenbones.net/maven/"
      }
 	 
-	 maven { // The repo from which to get waila
-         name "Mobius Repo"
-         url "http://mobiusstrip.eu/maven"
-     }
+	maven { // The repo from which to get waila
+        	name "Mobius Repo"
+        	url "http://mobiusstrip.eu/maven"
+     	}
 	 
-	 maven {
-            name = "inpure"
-            url = "http://files.inpureprojects.info/maven"
-     }
+	maven {
+        	name = "inpure"
+            	url = "http://files.inpureprojects.info/maven"
+     	}
 	 
-	 maven {
+	maven {
 		name = "ic2"
 		url = "http://maven.ic2.player.to/"
 	}
@@ -27,5 +27,11 @@ repositories {
 	 maven {
 		name = "tterrag"
 		url = "http://maven.tterrag.com/"
+	}
+	
+	// TCon and others
+	maven {
+        	name 'DVS1 Maven FS'
+        	url 'http://dvs1.progwml6.com/files/maven'
 	}
 }
