@@ -34,4 +34,10 @@ repositories {
         	name 'DVS1 Maven FS'
         	url 'http://dvs1.progwml6.com/files/maven'
 	}
+	
+	//See jenkins.rx14.co.uk Contains Baubles and can resolve a few remote repositories.
+	maven {
+		name 'RX14'
+		url 'http://mvn.rx14.co.uk/repo/'
+	}
 }
